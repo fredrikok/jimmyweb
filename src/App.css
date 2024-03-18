@@ -1,38 +1,38 @@
-.App {
-  text-align: center;
+body{
+  background-color: rgb(40, 40, 40);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-menu {
+  height: 80px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center; /* Center logo and items vertically */
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  height: 50px; /* Adjust based on your logo's size for better visibility */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* For very small devices, you might want to adjust font sizes, paddings, etc. */
+@media (max-width: 767px) {
+  .navbar-menu .menu {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .navbar-menu .menu .item {
+    padding: 10px 15px; /* Adjust padding for smaller screens */
   }
+}
+
+
+
+
+.ui.grid > .row > .column {
+  padding: 1rem;
+}
+
+.ui.image img {
+  border-radius: 4px; /* Adds a slight rounding to the corners of the images */
+  object-fit: cover; /* Ensures images cover the space without stretching */
+  height: 200px; /* Adjust based on your preference */
+  width: 100%;
 }
